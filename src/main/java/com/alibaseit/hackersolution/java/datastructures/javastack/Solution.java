@@ -6,9 +6,10 @@ import java.util.Stack;
 public class Solution {
 
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
+        int t = sc.nextInt();
 		Stack<Character> stack = new Stack<Character>();
-		while (sc.hasNext()) {
+		while (t-- > 0) {
 			stack.clear();
 			String input = sc.next();
 			for (int i = 0; i < input.length(); i++) {
@@ -24,7 +25,7 @@ public class Solution {
 				else
 					stack.push(element);
 			}
-			String msg = stack.isEmpty() ? "true" : "false";
+			String msg = stack.isEmpty() ? "YES" : "NO";
 			System.out.println(msg);
 		}
 		sc.close();
