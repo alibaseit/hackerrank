@@ -15,7 +15,7 @@ public class Solution {
 			while (n-- > 0) {
 				line.add(scanner.next());
 			}
-		    int ql = scanner.nextInt();
+			int ql = scanner.nextInt();
 			for (int i = 0; i < ql; i++) {
 				String cs = scanner.next();
 				int counter = (int) line.stream().filter(l -> l.equals(cs)).count();
