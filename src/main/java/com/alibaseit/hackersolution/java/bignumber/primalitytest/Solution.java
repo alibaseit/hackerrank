@@ -13,6 +13,5 @@ public class Solution {
 			System.out.println("prime");
 		else
 			System.out.println("not prime");
-		// Write your code here.
 	}
 }
